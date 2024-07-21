@@ -15,6 +15,15 @@ const Profile = () => {
 
   return (
     <div>
+      <div className="flex items-center justify-center h-screen bg-black">
+      <div className="ui-alert ui-alert-id-stats">
+        <div className='ui-alert-corner'></div>
+        <div className='ui-alert-corner'></div>
+        <div className='ui-alert-corner'></div>
+        <div className='ui-alert-corner'></div>
+        <h1 className=" ui-alert-title"><span>&#x1F6C8;</span>&nbsp;Stats</h1>
+      </div>
+    </div>
       <h1>Profile</h1>
       <pre>{JSON.stringify(user, null, 2)}</pre>
     </div>

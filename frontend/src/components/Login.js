@@ -7,9 +7,20 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-      <button onClick={handleLogin}>Login with Google</button>
+    <div className="flex items-center justify-center h-screen bg-black">
+      <div className="ui-alert ui-alert-id-login">
+        <div className='ui-alert-corner'></div>
+        <div className='ui-alert-corner'></div>
+        <div className='ui-alert-corner'></div>
+        <div className='ui-alert-corner'></div>
+        <h1 className=" ui-alert-title"><span>&#x1F6C8;</span>&nbsp;Login</h1>
+        <button 
+          onClick={handleLogin} 
+          className="ui-alert-button"
+        >
+          &#91;Welcome,&nbsp;<span>Guest</span>&#93;
+        </button>
+      </div>
     </div>
   );
 };
